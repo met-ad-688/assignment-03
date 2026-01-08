@@ -1,5 +1,5 @@
 ---
-title: Assignment 03
+title: "Module 3 Assignment: Big Data Visualization on Scale"
 author:
   - name: Norah Jones
     affiliations:
@@ -21,3 +21,22 @@ execute:
   eval: false
   freeze: auto
 ---
+
+
+## System Information {.unnumbered}
+
+```{python}
+#| eval: false
+#| echo: true
+import platform
+import psutil
+
+print("Operating System:", platform.system(), platform.release())
+print("Python Version:", platform.python_version())
+print("Machine:", platform.machine())
+print("Processor:", platform.processor())
+
+mem = psutil.virtual_memory()
+print("Total Memory (MB):", round(mem.total / (1024**2), 2))
+print("Available Memory (MB):", round(mem.available / (1024**2), 2))
+```
